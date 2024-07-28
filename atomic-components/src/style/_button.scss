@@ -1,0 +1,36 @@
+.button {
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+
+  &-outline {
+    &:hover:not(.button-disabled) {
+      background-color: $primaryColor;
+      color: $white;
+      transition: all 0.5s ease;
+    }
+
+    &.button-disabled {
+      color: $gray100;
+      border-color: $gray100;
+    }
+  }
+  &-solid {
+    background-color: $primaryColor;
+    color: $white;
+
+    &:hover:not(.button-disabled) {
+      background-color: $secondaryColor;
+      border-color: $secondaryColor;
+      color: $white;
+      transition: all 0.5s ease;
+    }
+
+    &.button-disabled {
+      background-color: $gray100;
+      border-color: $gray100;
+    }
+  }
+}

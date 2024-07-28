@@ -1,0 +1,58 @@
+@mixin box {
+  padding: 10px;
+  background-color: $white;
+  border-radius: 4px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  h1 {
+    @include box;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lighten($secondaryColor, 12%);
+    border: 1px solid rgba($secondaryColor, 0.5);
+    color: $white;
+  }
+  .container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0;
+    gap: 10px;
+    position: relative;
+
+    &::after {
+      content: "•••";
+      color: lighten($primaryColor, 40%);
+      position: absolute;
+      left: 50%;
+      bottom: -13px;
+      display: block;
+    }
+
+    .section {
+      flex: auto;
+      @include box;
+
+      h2 {
+        @include box;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: rgba($secondaryColor, 0.05);
+        border: 1px solid rgba($secondaryColor, 0.3);
+        font-weight: 500;
+      }
+
+      .group {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+      }
+    }
+  }
+}

@@ -1,14 +1,15 @@
 import React from "react";
-import ButtonGroup from "./ButtonGroup.js";
-import InputGroup from "./InputGroup.js";
 import "./style/index.css";
+import { Route, Routes } from "react-router-dom";
+import Main from "./Main.js";
 
 function App() {
   return (
-    <div className="App">
-      <ButtonGroup />
-      <InputGroup />
-    </div>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Main />} />
+      </Route>
+    </Routes>
   );
 }
 

@@ -3,7 +3,6 @@ import Container from "./layout/Container";
 import Section from "./layout/Section";
 import Group from "./layout/Group";
 import { Input, InputLabel } from "./Input.js";
-import "./style/index.css";
 
 const InputGroup = () => {
   const InputSize = [

@@ -1,9 +1,9 @@
-@import "reset";
-@import "variables";
-@import "layout";
-@import "App";
-@import "button";
-@import "input";
+@import "./reset.scss";
+@import "./App.scss";
+@import "./variables.scss";
+@import "./layout.scss";
+@import "./button.scss";
+@import "./input.scss";
 
 body {
   background-color: rgba($secondaryColor, 0.15);

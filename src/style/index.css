@@ -33,60 +33,6 @@ input, textarea, select, option, button {
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.App h1 {
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: #dab3ff;
-  border: 1px solid rgba(189, 118, 255, 0.5);
-  color: #fff;
-}
-.App .container {
-  margin-bottom: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 10px 0;
-  gap: 10px;
-  position: relative;
-}
-.App .container::after {
-  content: "•••";
-  color: #d14dff;
-  position: absolute;
-  left: 50%;
-  bottom: -13px;
-  display: block;
-}
-.App .container .section {
-  flex: auto;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 4px;
-}
-.App .container .section h2 {
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: rgba(189, 118, 255, 0.05);
-  border: 1px solid rgba(189, 118, 255, 0.3);
-  font-weight: 500;
-}
-.App .container .section .group {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 10px;
-}
-
-.App {
   text-align: center;
 }
 
@@ -123,6 +69,60 @@ input, textarea, select, option, button {
     transform: rotate(360deg);
   }
 }
+.Main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.Main h1 {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #dab3ff;
+  border: 1px solid rgba(189, 118, 255, 0.5);
+  color: #fff;
+}
+.Main .container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 0;
+  gap: 10px;
+  position: relative;
+}
+.Main .container::after {
+  content: "•••";
+  color: #d14dff;
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  display: block;
+}
+.Main .container .section {
+  flex: auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.Main .container .section h2 {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(189, 118, 255, 0.05);
+  border: 1px solid rgba(189, 118, 255, 0.3);
+  font-weight: 500;
+}
+.Main .container .section .group {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
 .button {
   padding: 12px 20px;
   border-radius: 4px;

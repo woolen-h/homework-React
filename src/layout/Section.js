@@ -1,5 +1,4 @@
 import React from "react";
-import "../style/index.css";
 
 const Section = ({ title, children }) => {
   return (

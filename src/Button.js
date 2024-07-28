@@ -1,5 +1,4 @@
 import React from "react";
-import "./style/index.css";
 
 const Button = ({ label, status, styles, disabled }) => {
   const getStatusClass = () => {

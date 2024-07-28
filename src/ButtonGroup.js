@@ -3,7 +3,6 @@ import Button from "./Button.js";
 import Container from "./layout/Container";
 import Section from "./layout/Section";
 import Group from "./layout/Group";
-import "./style/index.css";
 
 const ButtonGroup = () => {
   const outlineButtons = [

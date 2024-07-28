@@ -1,5 +1,4 @@
 import React from "react";
-import "./style/index.css";
 
 export function Input({ status, placeholder, size }) {
   const getStatusClass = () => {

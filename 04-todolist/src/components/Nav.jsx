@@ -1,19 +1,24 @@
 import React from "react";
+import Status from "./Status";
 
 function Nav() {
   return (
     <ul className="nav">
-      <li>
-        모두<span>1</span>
+      <li className="nav__filter">
+        모두
+        <Status />
       </li>
-      <li>
-        할일<span>1</span>
+      <li className="nav__filter">
+        할일
+        <Status />
       </li>
-      <li>
-        한일<span>1</span>
+      <li className="nav__filter">
+        한일
+        <Status />
       </li>
-      <li>
-        보관<span>1</span>
+      <li className="nav__filter">
+        보관
+        <Status />
       </li>
     </ul>
   );

@@ -1,0 +1,23 @@
+input {
+  &[type="checkbox"] {
+    border: 2px solid $gray200;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    &:checked {
+      background-color: $primaryColor;
+      border: 0;
+
+      &::after {
+        content: "";
+        display: block;
+        background-image: url(../../public/icon/icon-check.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

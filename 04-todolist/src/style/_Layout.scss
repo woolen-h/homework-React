@@ -4,12 +4,12 @@
   justify-content: center;
   width: 320px;
   height: 640px;
-  background-color: $viewport;
+  background-color: $gray50;
 
-  .LogoContainer {
+  .logo__container {
     width: 110px;
     height: 58px;
-    margin: 0 auto;
+    margin: 0 auto 44px;
 
     img {
       width: 100%;
@@ -17,20 +17,28 @@
       object-fit: contain;
     }
   }
-  .Title {
-    &__Head {
+  .title {
+    &__head {
       @include font;
+      margin-bottom: 8px;
     }
-    &__Date {
+    &__date {
       @include font($fw: 600, $fz: 12px, $color: $date);
+      margin-bottom: 27px;
     }
   }
   .nav {
     display: flex;
     gap: $gap;
-    margin: 0 auto;
+    margin: 0 auto 22px;
+
+    &__filter {
+      @include font($fw: 600, $fz: 14px, $color: $deactive);
+    }
   }
-  .todo__container {
-    padding: 10px;
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $gray200;
   }
 }

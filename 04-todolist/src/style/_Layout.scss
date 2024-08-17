@@ -1,0 +1,36 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 640px;
+  background-color: $viewport;
+
+  .LogoContainer {
+    width: 110px;
+    height: 58px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .Title {
+    &__Head {
+      @include font;
+    }
+    &__Date {
+      @include font($fw: 600, $fz: 12px, $color: $date);
+    }
+  }
+  .nav {
+    display: flex;
+    gap: $gap;
+    margin: 0 auto;
+  }
+  .todo__container {
+    padding: 10px;
+  }
+}

@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* 스타일 초기화 */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: inherit;
   font-size: 1em;
   margin: 0;
@@ -11,7 +16,8 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding-left: 0;
   padding-inline-start: 0;
@@ -24,12 +30,31 @@ fieldset {
   padding: 0;
 }
 
-p, figure {
+p,
+figure {
   margin: 0;
 }
 
-input, textarea, select, option, button {
+input,
+textarea,
+select,
+option,
+button {
   font: inherit;
+  border: 0;
+  padding: 0;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .App {
@@ -84,39 +109,49 @@ input, textarea, select, option, button {
   height: 640px;
   background-color: #f9f9f9;
 }
-.Layout .LogoContainer {
+.Layout .logo__container {
   width: 110px;
   height: 58px;
-  margin: 0 auto;
+  margin: 0 auto 44px;
 }
-.Layout .LogoContainer img {
+.Layout .logo__container img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.Layout .Title__Head {
+.Layout .title__head {
   font-family: pretendard;
   font-weight: 800;
   font-size: 24px;
   color: #00050e;
+  margin-bottom: 8px;
 }
-.Layout .Title__Date {
+.Layout .title__date {
   font-family: pretendard;
   font-weight: 600;
   font-size: 12px;
   color: #717171;
+  margin-bottom: 27px;
 }
 .Layout .nav {
   display: flex;
   gap: 16px;
-  margin: 0 auto;
+  margin: 0 auto 22px;
 }
-.Layout .todo__container {
-  padding: 10px;
+.Layout .nav__filter {
+  font-family: pretendard;
+  font-weight: 600;
+  font-size: 14px;
+  color: #979797;
+}
+.Layout .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
 }
 
-.button__container .button__primary {
+.button__primary {
   font-family: pretendard;
   font-weight: 700;
   font-size: 16px;
@@ -127,6 +162,92 @@ input, textarea, select, option, button {
   background-color: #0760fb;
   color: #e2ebfa;
   flex-basis: 0;
+  margin-bottom: 32px;
+}
+.button__archive .icon__archive {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../public/icon/icon-Archive.svg);
+}
+
+.status__container {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: #979797;
+  font-family: pretendard;
+  font-weight: 800;
+  font-size: 12px;
+  color: #fff;
+  margin-left: 4px;
+}
+
+.todo {
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+}
+.todo__container {
+  padding: 16px 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.todo__container li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.todo__title {
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0760fb;
+  display: flex;
+  justify-content: space-between;
+}
+.todo__disc {
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 12px;
+  color: #717171;
+  padding-right: 20px;
+}
+.todo__time {
+  display: flex;
+  justify-content: space-between;
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 11px;
+  color: #717171;
+}
+
+.icon__archive {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../public/icon/icon-Archive.svg);
+}
+
+input[type=checkbox] {
+  border: 2px solid #d9d9d9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+input[type=checkbox]:checked {
+  background-color: #0760fb;
+  border: 0;
+}
+input[type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  background-image: url(../../public/icon/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 20px;
+  height: 20px;
 }
 
 body {

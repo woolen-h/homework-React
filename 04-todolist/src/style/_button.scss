@@ -1,6 +1,17 @@
-.button__container {
-  .button__primary {
+.button {
+  &__primary {
     @include font($color: $label, $fz: 16px, $fw: 700);
     @include button($bg: $background, $color: $label);
+    margin-bottom: 32px;
+  }
+  &__archive {
+    .icon {
+      &__archive {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../public/icon/icon-Archive.svg);
+      }
+    }
   }
 }

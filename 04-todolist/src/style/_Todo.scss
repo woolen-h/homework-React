@@ -1,0 +1,32 @@
+.todo {
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+
+  &__container {
+    padding: 16px 20px;
+    border-radius: $border-radius;
+    background-color: $white;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  &__title {
+    @include font($color: $primaryColor, $fw: 500, $fz: 18px);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__disc {
+    @include font($color: $date, $fz: 12px, $fw: 500);
+    padding-right: 20px;
+  }
+  &__time {
+    display: flex;
+    justify-content: space-between;
+    @include font($color: $date, $fz: 11px, $fw: 400);
+  }
+}

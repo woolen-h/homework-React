@@ -1,4 +1,4 @@
-$primaryColor: #5f0080;
+$primaryColor: #0760fb;
 $secondaryColor: #bd76ff;
 $errorColor: #ef0000;
 $successColor: #008900;
@@ -6,11 +6,12 @@ $warningColor: #eb6e32;
 $blue500: #0066ff;
 
 $white: #fff;
-$viewport: #f9f9f9;
 $label: #e2ebfa;
-$gray100: #e1e1e1;
-$gray200: #c4c4c4;
+$gray50: #f9f9f9;
+$gray100: #f4f4f4;
+$gray200: #d9d9d9;
 $gray300: #a6a6a6;
+$deactive: #979797;
 $gray400: #898989;
 $date: #717171;
 $black: #333;
@@ -18,6 +19,9 @@ $forground: #00050e;
 $background: #0760fb;
 
 $border-radius: 12px;
+$status-radius: 4px;
+$status-padding: 2px 4px;
+$margin: 4px;
 $gap: 16px;
 
 @mixin font($ff: pretendard, $fw: 800, $fz: 24px, $color: $forground) {
@@ -34,4 +38,10 @@ $gap: 16px;
   background-color: $bg;
   color: $color;
   flex-basis: 0;
+}
+
+@mixin status() {
+  border-radius: $status-radius;
+  padding: $status-padding;
+  background-color: $deactive;
 }

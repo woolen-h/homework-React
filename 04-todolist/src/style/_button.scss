@@ -1,0 +1,6 @@
+.button__container {
+  .button__primary {
+    @include font($color: $label, $fz: 16px, $fw: 700);
+    @include button($bg: $background, $color: $label);
+  }
+}

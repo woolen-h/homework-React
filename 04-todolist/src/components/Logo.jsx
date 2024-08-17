@@ -2,7 +2,7 @@ import React from "react";
 
 function Logo() {
   return (
-    <div className="LogoContainer">
+    <div className="logo__container">
       <img src="../../public/Logo.svg" alt="Logo" />
     </div>
   );

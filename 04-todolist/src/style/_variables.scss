@@ -1,0 +1,37 @@
+$primaryColor: #5f0080;
+$secondaryColor: #bd76ff;
+$errorColor: #ef0000;
+$successColor: #008900;
+$warningColor: #eb6e32;
+$blue500: #0066ff;
+
+$white: #fff;
+$viewport: #f9f9f9;
+$label: #e2ebfa;
+$gray100: #e1e1e1;
+$gray200: #c4c4c4;
+$gray300: #a6a6a6;
+$gray400: #898989;
+$date: #717171;
+$black: #333;
+$forground: #00050e;
+$background: #0760fb;
+
+$border-radius: 12px;
+$gap: 16px;
+
+@mixin font($ff: pretendard, $fw: 800, $fz: 24px, $color: $forground) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  color: $color;
+}
+
+@mixin button($bg, $color) {
+  border-radius: $border-radius;
+  border: 0;
+  padding: 18px 20px;
+  background-color: $bg;
+  color: $color;
+  flex-basis: 0;
+}

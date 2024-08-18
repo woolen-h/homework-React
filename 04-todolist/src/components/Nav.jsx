@@ -2,8 +2,6 @@ import React from "react";
 import Status from "./Status";
 
 function Nav({ currentFilter, setFilter, todos }) {
-  console.log("Nav todos:", todos);
-
   return (
     <ul className="nav">
       <li

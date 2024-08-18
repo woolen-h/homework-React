@@ -105,9 +105,6 @@ function TodoList({ currentFilter }) {
       console.error("Failed to toggle archive status:", error);
     }
   };
-  useEffect(() => {
-    console.log("Todos updated:", todos);
-  }, [todos]);
 
   return (
     <div className="todo-list">

@@ -1,0 +1,47 @@
+$primaryColor: #0760fb;
+$secondaryColor: #e2ebfa;
+$errorColor: #ef0000;
+$successColor: #008900;
+$warningColor: #eb6e32;
+$blue500: #0066ff;
+
+$white: #fff;
+$label: #e2ebfa;
+$gray50: #f9f9f9;
+$gray100: #f4f4f4;
+$gray200: #d9d9d9;
+$gray300: #a6a6a6;
+$deactive: #979797;
+$gray400: #898989;
+$date: #717171;
+$black: #333;
+$forground: #00050e;
+$background: #0760fb;
+
+$border-radius: 12px;
+$status-radius: 4px;
+$status-padding: 2px 4px;
+$margin: 4px;
+$gap: 16px;
+
+@mixin font($ff: pretendard, $fw: 800, $fz: 24px, $color: $forground) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  color: $color;
+}
+
+@mixin button($bg, $color) {
+  border-radius: $border-radius;
+  border: 0;
+  padding: 18px 20px;
+  background-color: $bg;
+  color: $color;
+  flex-basis: 0;
+}
+
+@mixin status() {
+  border-radius: $status-radius;
+  padding: $status-padding;
+  background-color: $deactive;
+}

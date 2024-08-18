@@ -1,0 +1,30 @@
+.button {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    [class^="button"] {
+      flex: 1;
+    }
+  }
+  &__primary {
+    @include font($color: $label, $fz: 16px, $fw: 700);
+    @include button($bg: $primaryColor, $color: $label);
+  }
+  &__secondary {
+    @include font($color: $label, $fz: 16px, $fw: 700);
+    @include button($bg: $secondaryColor, $color: $primaryColor);
+  }
+  &__archive {
+    .icon {
+      &__archive {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../public/icon/icon-Archive.svg);
+      }
+    }
+  }
+}

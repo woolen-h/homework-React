@@ -1,0 +1,8 @@
+.status__container {
+  display: inline-block;
+  padding: $status-padding;
+  border-radius: $status-radius;
+  background-color: $deactive;
+  @include font($color: $white, $fz: 12px);
+  margin-left: $margin;
+}

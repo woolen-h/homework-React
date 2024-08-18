@@ -86,9 +86,10 @@ function AddButton() {
             />
           </label>
           <label>
-            언제 시작할거야?
+            언제 할거야?
             <div className="time__container">
               <select
+                className="time__startperiod"
                 name="startPeriod"
                 value={startTime.period}
                 onChange={(e) =>

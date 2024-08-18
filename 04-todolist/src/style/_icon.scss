@@ -1,8 +1,12 @@
 .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
   &__archive {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url(../../public/icon/icon-Archive.svg);
+    background-image: url(../../public/icon/icon-archive.svg);
+  }
+  &__unarchive {
+    background-image: url(../../public/icon/icon-unarchive.svg);
   }
 }

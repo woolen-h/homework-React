@@ -50,6 +50,15 @@
     }
   }
 }
+.time {
+  &__container {
+  }
+  &__startperiod {
+    padding: 8px;
+    border: 1px solid $gray200;
+    border-radius: 6px;
+  }
+}
 
 @keyframes slideUp {
   from {

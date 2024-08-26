@@ -25,3 +25,6 @@ yarn-error.log*
 # setting
 
 /.vscode
+04-todolist/node_modules/.pnpm/ajv@6.12.6/node_modules/ajv/lib/keyword.js
+/04-todolist/node_modules
+/04-todolist/dist
